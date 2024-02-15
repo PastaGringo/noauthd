@@ -1089,7 +1089,7 @@ if (process.argv.length >= 3) {
 
   // start server
   loadFromDb().then(() => {
-    app.listen(port, () => {
+    app.listen(port, '0.0.0.0', () => {
       console.log(`Listening on port ${port}!`);
     });
   });
